@@ -29,7 +29,7 @@ jobs:
         run: npm install
 
       - name: Make test.sh executable
-        run: chmod +x ./test.sh
+        run: chmod +x ./src/test.sh
 
       - name: Run tests
-        run: ./test.sh
+        run: ./src/test.sh
