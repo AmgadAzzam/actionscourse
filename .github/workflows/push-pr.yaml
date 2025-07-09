@@ -1,0 +1,28 @@
+on: 
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      
+  pull_request:
+    branches:
+      - main  
+    paths: 
+      - 'src/**'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+
+      - name: run test
+        run: ./test.sh
+
+       

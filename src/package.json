@@ -1,0 +1,10 @@
+{
+    "name": "gethubactions-demo",
+    "version": "1.0.0",
+    "description": "A demo project for GitHub Actions",
+    "main": "src/app.js",
+    "scripts": {
+        "test": "./test.sh"
+}
+
+}
