@@ -7,4 +7,4 @@ if (require.main === module) {
     console.log(greet(name));
 }
 
-module.exports = greet;
+// module.exports = greet;
